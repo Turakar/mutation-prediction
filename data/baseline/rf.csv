@@ -1,0 +1,33 @@
+dataset,descriptor,max_features,n_estimators
+Public-A,mutInd,0.33,500
+Public-A,Identity,0.33,500
+Public-A,PCscores ,log2,200
+Public-A,zScales,log2,200
+Public-A,VHSE,log2,200
+Public-A,protVec,log2,200
+Public-A,sScales,log2,1000
+Public-A,sPairs,sqrt,1000
+Public-B,mutInd,0.33,500
+Public-B,Identity,0.33,200
+Public-B,PCscores ,0.33,500
+Public-B,zScales,0.33,500
+Public-B,VHSE,0.33,500
+Public-B,protVec,0.33,200
+Public-B,sScales,log2,200
+Public-B,sPairs,0.33,200
+Public-C,mutInd,log2,200
+Public-C,Identity,log2,1000
+Public-C,PCscores ,sqrt,200
+Public-C,zScales,log2,200
+Public-C,VHSE,log2,1000
+Public-C,protVec,log2,200
+Public-C,sScales,log2,200
+Public-C,sPairs,sqrt,500
+Public-D,mutInd,log2,200
+Public-D,Identity,0.33,200
+Public-D,PCscores ,0.33,200
+Public-D,zScales,0.33,200
+Public-D,VHSE,0.33,500
+Public-D,protVec,sqrt,200
+Public-D,sScales,0.33,1000
+Public-D,sPairs,sqrt,1000

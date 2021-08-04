@@ -1,0 +1,142 @@
+id,mutations,E
+WT, Leu 215  Arg 219  Phe 244  Leu 249  Thr 317  Thr 318  Leu 349  Cys 350 ,5
+GUY-107, Phe 215  Asp 219  -  -  -  -  -  - ,23
+GUY-111, -  -  -  -  -  -  Val 349  His 350 ,10
+GUY-112, -  -  -  -  -  -  Val 349  Tyr 350 ,9
+GUY-113, -  -  -  -  Phe 317  Ser 318  -  - ,21
+GUY-115, -  -  -  -  Phe 317  Gly 318  -  - ,17
+GUY-116, -  -  -  Phe 249  -  -  -  - ,12
+GUY-117, -  -  -  Ser 249  -  -  -  - ,7
+GUY-118, -  -  -  Ile 249  -  -  - ,9
+GUY-119, Phe 215  Asp 219  -  -  -  -  -  Val 350 ,24
+GUY-120, Phe 215  Asp 219  -  -  Cys 317  Phe 318  -  - ,44
+GUY-121, Phe 215  Asp 219  -  Tyr 249  -  -  -  - ,52
+GUY-122, Phe 215  Asp 219  Tyr 244  Tyr 249  -  -  -  - ,43
+GUY-123, Phe 215  Asp 219  -  -  -  -  Val 349  His 350 ,22
+GUY-124, -  -  -  -  Cys 317  Phe 318  Val 349  His 350 ,26
+GUY-125, -  -  -  -  Phe 317  Cys 318  Val 349  His 350 ,23
+GUY-126, -  -  -  -  Phe 317  Tyr 318  Val 349  His 350 ,25
+GUY-127, -  -  -  Tyr 249  -  -  Val 349  His 350 ,12
+GUY-128, Phe 215  Cys 219  -  -  Phe 317  Ser 318  -  - ,36
+GUY-129, Phe 215  Val 219  -  -  Phe 317  Ser 318  -  - ,36
+GUY-130, -  -  -  -  Phe 317  Ser 318  Cys 349  Ser 350 ,25
+GUY-131, -  -  -  Val 249  Phe 317  Ser 318  -  - ,20
+GUY-132, Phe 215  Val 219  -  Phe 249  -  -  -  - ,25
+GUY-133, Ile 215  Ser 219  -  Phe 249  -  -  -  - ,26
+GUY-134, -  -  -  Phe 249  -  -  Val 349  His 350 ,19
+GUY-135, -  -  -  Phe 249  Cys 317  Phe 318  -  - ,17
+GUY-136, -  -  -  Phe 249  Leu 317  Tyr 318  -  - ,18
+GUY-137, Phe 215  Asp 219  -  -  Cys 317  Phe 318  -  Val 350 ,55
+GUY-138, Phe 215  Asp 219  -  Tyr 249  -  -  -  Val 350 ,45
+GUY-139, Phe 215  Asp 219  -  -  Cys 317  Phe 318  -  Ile 350 ,73
+GUY-140, Phe 215  Asp 219  -  -  Cys 317  Phe 318  -  Val 350 ,33
+GUY-141, Phe 215  Asp 219  -  Phe 249  Cys 317  Phe 318  -  - ,64
+GUY-142, Phe 215  Asp 219  Ile 244  Ile 249  Cys 317  Phe 318  -  - ,65
+GUY-143, Phe 215  Asp 219  -  Tyr 249  -  -  -  Val 350 ,49
+GUY-144, Phe 215  Asp 219  -  Tyr 249  Phe 317  Ser 318  -  - ,52
+GUY-145, Phe 215  Asp 219  -  -  Ile 317  Phe 318  Val 349  His 350 ,75
+GUY-146, Phe 215  Asp 219  -  Tyr 249  -  -  Val 349  His 350 ,54
+GUY-147, Phe 215  Asp 219  -  Phe 249  -  -  Val 349  His 350 ,38
+GUY-148, Phe 215  Asp 219  -  -  Cys 317  Phe 318  Val 349  His 350 ,53
+GUY-149, Phe 215  Asn 219  -  -  Cys 317  Phe 318  Val 349  His 350 ,48
+GUY-150,-  -  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,73
+GUY-151, -  -  Ile 244  Val 249  Cys 317  Phe 318  Val 349  His 350 ,42
+GUY-152, Phe 215  Asp 219  -  Tyr 249  -  -  Val 349  His 350 ,57
+GUY-153, -  -  -  Tyr 249  Val 317  Phe 318  Val 349  His 350 ,23
+GUY-154, -  -  -  Tyr 249  Phe 317  Phe 318  Val 349  His 350 ,20
+GUY-155, -  -  -  Tyr 249  Phe 317  Cys 318  Val 349  His 350 ,24
+GUY-156, Phe 215  Cys 219  -  -  Phe 317  Ser 318  -  Val 350 ,32
+GUY-157, Phe 215  Cys 219  Ile 244  Phe 249  Phe 317  Ser 318  -  - ,69
+GUY-158, Phe 215  Cys 219  Tyr 244  Phe 249  Phe 317  Ser 318  -  - ,36
+GUY-159, Phe 215  -  -  -  Phe 317  Ser 318  Cys 349  Ser 350 ,45
+GUY-160, Phe 215  Val 219  -  -  Phe 317  Ser 318  Cys 349  Ser 350 ,37
+GUY-161, -  -  -  -  Phe 317  Ser 318  Cys 349  Ser 350 ,24
+GUY-162, -  -  -  Ile 249  Phe 317  Ser 318  Cys 349  Ser 350 ,23
+GUY-163, Phe 215  -  -  Val 249  Phe 317  Ser 318  -  - ,40
+GUY-164, Phe 215  Val 219  -  Val 249  Phe 317  Ser 318  -  - ,22
+GUY-165, -  -  -  Val 249  Phe 317  Ser 318  -  Ser 350 ,27
+GUY-166, -  -  -  Val 249  Phe 317  Ser 318  Val 349  - ,23
+GUY-167, Phe 215  Val 219  -  Phe 249  -  -  -  Val 350 ,34
+GUY-168, Phe 215  Val 219  -  Phe 249  Phe 317  Cys 318  -  - ,102
+GUY-169, Phe 215  Val 219  -  Phe 249  Phe 317  Ile 318  -  - ,63
+GUY-170, Phe 215  Val 219  -  Phe 249  Val 317  Asp 318  -  - ,67
+GUY-171, Phe 215  Val 219  -  Phe 249  Ile 317  His 318  -  - ,83
+GUY-172, Phe 215  Val 219  -  Phe 249  Ile 317  Asn 318  -  - ,72
+GUY-173, Phe 215  Val 219  -  Phe 249  Ile 317  Ser 318  -  - ,79
+GUY-174, Phe 215  Val 219  -  Phe 249  Ile 317  Tyr 318  -  - ,81
+GUY-175, Phe 215  Val 219  -  Phe 249  Ile 317  Asp 318  -  - ,69
+GUY-176, Phe 215  Leu 219  -  Phe 249  -  -  Val 349  His 350 ,40
+GUY-177, Phe 215  Tyr 219  -  Phe 249  -  -  Val 349  His 350 ,36
+GUY-178, Phe 215  Asp 219  -  Phe 249  -  -  Val 349  His 350 ,36
+GUY-179, -  -  -  Phe 249  Val 317  Phe 318  Val 349  His 350 ,21
+GUY-180, -  -  -  Phe 249  Ile 317  Asp 318  Val 349  His 350 ,25
+GUY-181, Phe 215  Asp 219  -  Phe 249  Cys 317  Phe 318  -  - ,67
+GUY-182, Phe 215  His 219  -  Phe 249  Cys 317  Phe 318  -  - ,51
+GUY-183, Phe 215  Val 219  -  Phe 249  Cys 317  Phe 318  -  - ,55
+GUY-184, -  -  -  Phe 249  Cys 317  Phe 318  Val 349  His 350 ,25
+GUY-185, Phe 215  Asp 219  Ile 244  Ile 249  Cys 317  Phe 318  -  Val 350 ,69
+GUY-186, Phe 215  Asp 219  Cys 244  -  Cys 317  Phe 318  -  Val 350 ,76
+GUY-187, Phe 215  Asp 219  Ile 244  -  Cys 317  Phe 318  -  Val 350 ,71
+GUY-188, Phe 215  Asp 219  -  Tyr 249  Ser 317  Ser 318  -  Val 350 ,51
+GUY-189, Phe 215  Asp 219  -  Tyr 249  Phe 317  Val 318  -  Val 350 ,40
+GUY-190, Phe 215  Asp 219  Ile 244  Ile 249  Cys 317  Phe 318  -  Ile 350 ,63
+GUY-191, Phe 215  Asp 219  Val 244  Ile 249  Cys 317  Phe 318  -  Ile 350 ,77
+GUY-192, Phe 215  Asp 219  -  Phe 249  Cys 317  Phe 318  Asn 349  Ile 350 ,57
+GUY-193, Phe 215  Asp 219  -  Tyr 249  Val 317  Phe 318  Val 350 ,56
+GUY-194, Phe 215  Asp 219  -  Tyr 249  Phe 317  Ser 318  His 349  - ,90
+GUY-195, Phe 215  Asp 219  Ile 244  Ile 249  Ile 317  Phe 318  Val 349  His 350 ,98
+GUY-196, Phe 215  Asp 219  Val 244  Ile 249  Ile 317  Phe 318  Val 349  His 350 ,111
+GUY-197, Phe 215  Asp 219  Val 244  Val 249  Ile 317  Phe 318  Val 349  His 350 ,119
+GUY-198, Phe 215  Asp 219  -  Phe 249  Ile 317  Phe 318  Val 349  His 350 ,103
+GUY-199, Phe 215  Asp 219  -  Tyr 249  Phe 317  Val 318  Val 349  His 350 ,87
+GUY-200, Phe 215  Asp 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,95
+GUY-201, Phe 215  Asp 219  Val 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,79
+GUY-259, -  Phe 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,127
+GUY-260, -  Ile 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,118
+GUY-261, -  Asn 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,105
+GUY-262, -  Val 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,121
+GUY-263, -  Cys 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,120
+GUY-264, -  His 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,118
+GUY-265,-  Gly 219  Ile 244  Ile 249  Cys 317  Phe 318  Val 349  His 350 ,122
+GUY-202, Phe 215  Asp 219  -  Tyr 249  Phe 317  Val 318  Val 349  His 350 ,88
+GUY-203, Phe 215  Asp 219  -  Tyr 249  Val 317  Phe 318  Val 349  His 350 ,61
+GUY-204,Phe 215 Asp 219 – Tyr 249 Phe 317 Gly 381 Val 349 His 350,92
+GUY-205,Phe 215 Asp 219 – Tyr 249 Ile 317 Phe 318 Val 349 His 350,64
+GUY-206,Phe 215 Asp 219 – Tyr 249 Phe 317 Ser 318 Val 349 His 350,63
+GUY-207,Phe 315 Asp 219 – Tyr 249 Val 317 Phe 318 Val 349 His 350,63
+GUY-208,Phe 215 Gly 219 – Tyr 249 Val 317 Phe 318 Val 349 His 350,49
+GUY-209,Phe 215 His 219 – Tyr 249 Val 317 Phe 318 Val 349 His 350,51
+GUY-210,Phe 215 Asn 219 – Tyr 249 Val 317 Phe 318 Val 349 His 350,57
+GUY-211, Phe 215  Cys 219  Asn 244  Phe 249  Phe 317  Ser 318  -  Val 350 ,48
+GUY-212, Phe 215  Cys 219  Val 244  Phe 249  Phe 317  Ser 318  -  Val 350 ,97
+GUY-213, Phe 215  Cys 219  His 244  Phe 249  Phe 317  Ser 318  -  Val 350 ,50
+GUY-214, Phe 215  Cys 219  -  Phe 249  Phe 317  Ser 318  -  Val 350 ,52
+GUY-215, Phe 215  Cys 219  Ile 244  Phe 249  Phe 317  Ser 318  Val 349  - ,86
+GUY-216, Phe 215  -  -  Phe 249  Phe 317  Ser 318  Cys 349  Ser 350 ,120
+GUY-217, Phe 215  -  His 244  Phe 249  Phe 317  Ser 318  Cys 349  Ser 350 ,110
+GUY-218, -  Val 219  -  -  Phe 317  Ser 318  Cys 349  Ser 350 ,24
+GUY-219, Phe 215  Cys 219  -  -  Phe 317  Ser 318  Cys 349  Ser 350 ,28
+GUY-220, Phe 215  -  -  Val 249  Phe 317  Ser 318  -  Asn 350,32
+GUY-221, Phe 215  -  -  Val 249  Phe 317  Ser 318  -  Val 350 ,25
+GUY-222, Phe 215  -  -  Val 249  Phe 317  Ser 318  -  Cys 350 ,30
+GUY-223, Phe 215  -  -  Val 249  Phe 317  Ser 318  -  Ser 350 ,30
+GUY-224, Phe 215  Val 219  -  Phe 249  Val 317  Val 318  -  Val 350 ,100
+GUY-225, Phe 215  Val 219  -  Phe 249  Ile 317  His 318  -  Val 350 ,94
+GUY-226, Phe 215  Val 219  -  Phe 249  Val 317  Asn 318  -  Val 350 ,70
+GUY-227, Phe 215  Val 219  -  Phe 249  Val 317  His 318  -  Val 350 ,74
+GUY-228, Phe 215  Val 219  -  Phe 249  Phe 317  Cys 318  Asp 349  Tyr 350 ,158
+GUY-229, Phe 215  Val 219  -  Phe 249  Phe 317  Cys 318  Val 349  His 350 ,108
+GUY-230, Phe 215  Leu 219  -  Phe 249  Phe 317  Cys 318  Val 349  His 350 ,101
+GUY-231,Phe 215 Leu 219 – Phe 249 Phe 317 Val 318 Val 349 His 350,81
+GUY-232,Phe 215 Leu 219 – Phe 249 Phe 317 Ile 318 Val 349 His 350,66
+GUY-233,Phe 215 Leu 219 – Phe 249 Ile 317 Ser 318 Val 349 His 350,80
+GUY-234,Phe 215 Leu 219 – Phe 249 Phe 317 Gly 318 Val 349 His 350,84
+GUY-235,Phe 215 Leu 219 – Phe 249 Ile 317 Asn 318 Val 349 His 350,66
+GUY-236,Phe 215 Asn 219 – Phe 249 Val 317 Phe 318 Val 349 His 350,69
+GUY-237,Phe 215 Leu 219 – Phe 249 Val 317 Phe 318 Val 349 His 350,75
+GUY-238,Phe 215 Asp 219 – Phe 249 Cys 317 Phe 318 – Val 350,38
+GUY-239,Phe 215 Asp 219 – Phe 249 Cys 317 Phe 318 Val 349 His 350,56
+GUY-240,Phe 215 Gly 219 – Phe 249 Cys 317 Phe 318 Val 349 His 350,57
+GUY-241,Phe 215 Val 219 – Phe 249 Cys 317 Phe 318 Val 349 His 350,35
+GUY-258,Phe 215 Ser 219 – Phe 249 Cys 317 Phe 318 Val 349 His 350,55
+LW202, Phe 215  Ser 219  -  Tyr 249  Trp 317  Val 318  -  Val 350 ,102

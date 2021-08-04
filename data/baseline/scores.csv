@@ -1,0 +1,177 @@
+dataset,descriptor,method,RMSE,rsq,rank_RMSE,rank_rsq
+Public-A,Identity,CNN,22.674,0.852,26,30
+Public-A,Identity,GLMNET,20.6,0.871,6,15
+Public-A,Identity,MLP,19.724,0.884,3,7
+Public-A,Identity,RF,24.833,0.85,33,31
+Public-A,Identity,SVM,20.808,0.867,8,19
+Public-A,Identity,XGB,21.049,0.864,12,22
+Public-A,mutInd,GLMNET,20.975,0.868,11,17
+Public-A,mutInd,MLP,20.61,0.888,7,6
+Public-A,mutInd,RF,25.918,0.848,35,32
+Public-A,mutInd,SVM,22.453,0.854,23,29
+Public-A,mutInd,XGB,20.448,0.871,5,15
+Public-A,PCscores ,CNN,19.698,0.89,2,5
+Public-A,PCscores ,GLMNET,22.386,0.863,22,23
+Public-A,PCscores ,MLP,19.772,0.901,4,2
+Public-A,PCscores ,RF,24.813,0.861,32,26
+Public-A,PCscores ,SVM,20.9,0.876,9,11
+Public-A,PCscores ,XGB,21.363,0.86,16,27
+Public-A,protVec,GLMNET,21.693,0.86,17,27
+Public-A,protVec,MLP,28.151,0.797,36,39
+Public-A,protVec,RF,43.997,0.667,44,43
+Public-A,protVec,SVM,29.051,0.763,38,41
+Public-A,protVec,XGB,36.934,0.689,43,42
+Public-A,sPairs,GLMNET,28.307,0.843,37,35
+Public-A,sPairs,MLP,22.523,0.836,24,36
+Public-A,sPairs,RF,25.793,0.848,34,32
+Public-A,sPairs,SVM,22.302,0.846,21,34
+Public-A,sPairs,XGB,21.944,0.836,18,36
+Public-A,sScales,GLMNET,36.551,0.825,42,38
+Public-A,sScales,MLP,30.915,0.867,40,19
+Public-A,sScales,RF,24.383,0.862,29,24
+Public-A,sScales,SVM,34.408,0.617,41,44
+Public-A,sScales,XGB,21.188,0.872,14,13
+Public-A,VHSE,CNN,22.742,0.877,27,10
+Public-A,VHSE,GLMNET,23.365,0.876,28,11
+Public-A,VHSE,MLP,18.463,0.934,1,1
+Public-A,VHSE,RF,24.41,0.862,30,24
+Public-A,VHSE,SVM,22.016,0.883,19,9
+Public-A,VHSE,XGB,21.099,0.866,13,21
+Public-A,zScales,CNN,20.963,0.898,10,3
+Public-A,zScales,GLMNET,22.132,0.884,20,7
+Public-A,zScales,MLP,22.524,0.897,25,4
+Public-A,zScales,RF,24.727,0.872,31,13
+Public-A,zScales,SVM,29.392,0.797,39,39
+Public-A,zScales,XGB,21.325,0.868,15,17
+Public-B,Identity,CNN,5.922,0.709,1,3
+Public-B,Identity,GLMNET,12.567,0.328,34,32
+Public-B,Identity,MLP,11.04,0.366,24,28
+Public-B,Identity,RF,9.882,0.454,19,22
+Public-B,Identity,SVM,10.113,0.501,20,17
+Public-B,Identity,XGB,7.786,0.651,6,4
+Public-B,mutInd,GLMNET,9.216,0.344,16,30
+Public-B,mutInd,MLP,8.922,0.331,15,31
+Public-B,mutInd,RF,7.236,0.508,5,15
+Public-B,mutInd,SVM,11.229,0.5,27,18
+Public-B,mutInd,XGB,6.972,0.487,4,21
+Public-B,PCscores ,CNN,6.082,0.743,2,2
+Public-B,PCscores ,GLMNET,10.162,0.185,21,39
+Public-B,PCscores ,MLP,13.854,0.261,38,34
+Public-B,PCscores ,RF,11.52,0.257,30,35
+Public-B,PCscores ,SVM,9.79,0.154,18,40
+Public-B,PCscores ,XGB,7.898,0.494,8,19
+Public-B,protVec,GLMNET,12.778,0.001,35,44
+Public-B,protVec,MLP,11.046,0.072,25,42
+Public-B,protVec,RF,11.464,0.573,28,12
+Public-B,protVec,SVM,6.828,0.586,3,9
+Public-B,protVec,XGB,8.644,0.565,13,13
+Public-B,sPairs,GLMNET,17.711,0.754,40,1
+Public-B,sPairs,MLP,19.377,0.38,42,27
+Public-B,sPairs,RF,9.368,0.637,17,6
+Public-B,sPairs,SVM,15.679,0.448,39,24
+Public-B,sPairs,XGB,8.594,0.646,12,5
+Public-B,sScales,GLMNET,26.729,0.613,44,7
+Public-B,sScales,MLP,21.827,0.245,43,36
+Public-B,sScales,RF,10.894,0.432,23,26
+Public-B,sScales,SVM,13.285,0.488,37,20
+Public-B,sScales,XGB,8.494,0.583,11,10
+Public-B,VHSE,CNN,8.075,0.579,9,11
+Public-B,VHSE,GLMNET,17.913,0.503,41,16
+Public-B,VHSE,MLP,10.848,0.358,22,29
+Public-B,VHSE,RF,12.961,0.195,36,38
+Public-B,VHSE,SVM,11.628,0.613,31,7
+Public-B,VHSE,XGB,8.92,0.451,14,23
+Public-B,zScales,CNN,7.844,0.559,7,14
+Public-B,zScales,GLMNET,11.518,0.286,29,33
+Public-B,zScales,MLP,12.427,0.106,33,41
+Public-B,zScales,RF,11.746,0.243,32,37
+Public-B,zScales,SVM,11.184,0.036,26,43
+Public-B,zScales,XGB,8.203,0.447,10,25
+Public-C,Identity,CNN,0.384,0.201,21,21
+Public-C,Identity,GLMNET,0.337,0.279,6,4
+Public-C,Identity,MLP,0.383,0.192,20,24
+Public-C,Identity,RF,0.365,0.244,17,10
+Public-C,Identity,SVM,0.32,0.249,2,8
+Public-C,Identity,XGB,0.35,0.259,12,7
+Public-C,mutInd,GLMNET,0.362,0.223,14,16
+Public-C,mutInd,MLP,0.459,0.216,43,17
+Public-C,mutInd,RF,0.425,0.234,36,14
+Public-C,mutInd,SVM,0.363,0.241,15,12
+Public-C,mutInd,XGB,0.408,0.245,29,9
+Public-C,PCscores ,CNN,0.374,0.209,19,20
+Public-C,PCscores ,GLMNET,0.36,0.176,13,29
+Public-C,PCscores ,MLP,0.406,0.194,27,23
+Public-C,PCscores ,RF,0.403,0.166,25,33
+Public-C,PCscores ,SVM,0.324,0.236,3,13
+Public-C,PCscores ,XGB,0.319,0.288,1,2
+Public-C,protVec,GLMNET,0.42,0.075,32,43
+Public-C,protVec,MLP,0.446,0.112,39,41
+Public-C,protVec,RF,0.411,0.155,31,35
+Public-C,protVec,SVM,0.37,0.21,18,18
+Public-C,protVec,XGB,0.348,0.21,11,18
+Public-C,sPairs,GLMNET,0.396,0.138,24,37
+Public-C,sPairs,MLP,0.455,0.192,41,24
+Public-C,sPairs,RF,0.457,0.195,42,22
+Public-C,sPairs,SVM,0.423,0.272,35,5
+Public-C,sPairs,XGB,0.421,0.231,34,15
+Public-C,sScales,GLMNET,0.325,0.129,4,38
+Public-C,sScales,MLP,0.342,0.171,8,30
+Public-C,sScales,RF,0.344,0.285,9,3
+Public-C,sScales,SVM,0.44,0.098,38,42
+Public-C,sScales,XGB,0.341,0.295,7,1
+Public-C,VHSE,CNN,0.386,0.182,22,28
+Public-C,VHSE,GLMNET,0.406,0.15,27,36
+Public-C,VHSE,MLP,0.454,0.123,40,40
+Public-C,VHSE,RF,0.42,0.169,32,31
+Public-C,VHSE,SVM,0.363,0.191,15,26
+Public-C,VHSE,XGB,0.347,0.242,10,11
+Public-C,zScales,CNN,0.403,0.159,25,34
+Public-C,zScales,GLMNET,0.462,0.074,44,44
+Public-C,zScales,MLP,0.428,0.127,37,39
+Public-C,zScales,RF,0.393,0.185,23,27
+Public-C,zScales,SVM,0.408,0.168,29,32
+Public-C,zScales,XGB,0.334,0.262,5,6
+Public-D,Identity,CNN,0.96,0.412,16,12
+Public-D,Identity,GLMNET,1.002,0.341,26,26
+Public-D,Identity,MLP,0.935,0.376,14,23
+Public-D,Identity,RF,0.991,0.406,25,14
+Public-D,Identity,SVM,0.876,0.515,5,1
+Public-D,Identity,XGB,0.948,0.397,15,17
+Public-D,mutInd,GLMNET,1.081,0.257,31,32
+Public-D,mutInd,MLP,1.107,0.251,35,33
+Public-D,mutInd,RF,1.196,0.243,38,35
+Public-D,mutInd,SVM,0.887,0.42,6,9
+Public-D,mutInd,XGB,1.101,0.244,34,34
+Public-D,PCscores ,CNN,0.913,0.453,10,5
+Public-D,PCscores ,GLMNET,2.028,0,43,44
+Public-D,PCscores ,MLP,1.018,0.328,29,28
+Public-D,PCscores ,RF,0.975,0.411,22,13
+Public-D,PCscores ,SVM,0.802,0.504,1,2
+Public-D,PCscores ,XGB,0.963,0.381,18,22
+Public-D,protVec,GLMNET,1.203,0.108,39,40
+Public-D,protVec,MLP,1.092,0.177,33,38
+Public-D,protVec,RF,0.987,0.359,24,25
+Public-D,protVec,SVM,1.079,0.285,30,30
+Public-D,protVec,XGB,0.853,0.382,2,20
+Public-D,sPairs,GLMNET,1.248,0.011,40,42
+Public-D,sPairs,MLP,0.974,0.301,21,29
+Public-D,sPairs,RF,0.913,0.474,10,3
+Public-D,sPairs,SVM,1.082,0.267,32,31
+Public-D,sPairs,XGB,0.869,0.461,4,4
+Public-D,sScales,GLMNET,6.43,0.003,44,43
+Public-D,sScales,MLP,1.191,0.19,37,37
+Public-D,sScales,RF,1.004,0.382,27,20
+Public-D,sScales,SVM,1.117,0.218,36,36
+Public-D,sScales,XGB,1.015,0.339,28,27
+Public-D,VHSE,CNN,0.918,0.448,12,6
+Public-D,VHSE,GLMNET,1.251,0.035,41,41
+Public-D,VHSE,MLP,0.862,0.404,3,16
+Public-D,VHSE,RF,0.97,0.414,20,11
+Public-D,VHSE,SVM,0.893,0.421,8,8
+Public-D,VHSE,XGB,0.964,0.376,19,23
+Public-D,zScales,CNN,0.93,0.427,13,7
+Public-D,zScales,GLMNET,1.438,0.147,42,39
+Public-D,zScales,MLP,0.889,0.393,7,18
+Public-D,zScales,RF,0.978,0.406,23,14
+Public-D,zScales,SVM,0.893,0.419,8,10
+Public-D,zScales,XGB,0.96,0.386,16,19

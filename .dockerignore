@@ -1,0 +1,17 @@
+.ipynb_checkpoints/
+.pytest_cache/
+tests/
+.gitignore
+check.sh
+*.ipynb
+*.db
+mutation-prediction-image.tar
+.git/
+.idea/
+lightning_logs/
+__pycache__/
+Dockerfile
+Dockerfile.gpu
+Dockerfile.redis
+mutation_prediction_native/target
+precomputed/

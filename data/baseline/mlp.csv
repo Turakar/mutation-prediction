@@ -1,0 +1,33 @@
+dataset,descriptor,batch_size,learning_rate,init_scale,model,epoch,optimizer,momentum,eval_metric
+Public-A,Identity,20,0.01,0.005,model_12,300,SGD,0.9,mse
+Public-A,mutInd,10,0.01,0.005,model_11,220,SGD,0.9,mse
+Public-A,PCscores ,10,0.005,0.01,model_21,50,SGD,0.9,mse
+Public-A,protVec,10,0.005,0.01,model_12,230,SGD,0.9,mse
+Public-A,sPairs,20,0.005,0.01,model_11,40,SGD,0.9,mse
+Public-A,sScales,10,0.01,0.005,model_12,220,SGD,0.9,mse
+Public-A,VHSE,20,0.01,0.005,model_21,290,SGD,0.9,mse
+Public-A,zScales,10,0.01,0.01,model_21,160,SGD,0.9,mse
+Public-C,Identity,10,0.01,0.005,model_22,90,SGD,0.9,mse
+Public-C,mutInd,10,0.001,0.01,model_12,200,SGD,0.9,mse
+Public-C,PCscores ,20,0.01,0.005,model_11,30,SGD,0.9,mse
+Public-C,protVec,10,0.001,0.005,model_11,30,SGD,0.9,mse
+Public-C,sPairs,40,0.001,0.01,model_12,50,SGD,0.9,mse
+Public-C,sScales,10,0.01,0.01,model_21,300,SGD,0.9,mse
+Public-C,VHSE,10,0.01,0.005,model_22,30,SGD,0.9,mse
+Public-C,zScales,20,0.001,0.01,model_11,60,SGD,0.9,mse
+Public-B,Identity,20,0.01,0.01,model_12,290,SGD,0.9,mse
+Public-B,mutInd,10,0.01,0.01,model_22,150,SGD,0.9,mse
+Public-B,PCscores ,10,0.01,0.005,model_22,50,SGD,0.9,mse
+Public-B,protVec,10,0.005,0.01,model_11,70,SGD,0.9,mse
+Public-B,sPairs,40,0.005,0.01,model_22,180,SGD,0.9,mse
+Public-B,sScales,10,0.005,0.01,model_12,280,SGD,0.9,mse
+Public-B,VHSE,10,0.01,0.01,model_21,70,SGD,0.9,mse
+Public-B,zScales,10,0.01,0.005,model_21,150,SGD,0.9,mse
+Public-D,Identity,20,0.005,0.01,model_11,190,SGD,0.9,mse
+Public-D,mutInd,40,0.01,0.01,model_22,300,SGD,0.9,mse
+Public-D,PCscores ,40,0.001,0.01,model_22,230,SGD,0.9,mse
+Public-D,protVec,20,0.001,0.01,model_12,300,SGD,0.9,mse
+Public-D,sPairs,40,0.001,0.005,model_11,170,SGD,0.9,mse
+Public-D,sScales,40,0.005,0.005,model_12,280,SGD,0.9,mse
+Public-D,VHSE,20,0.001,0.01,model_11,300,SGD,0.9,mse
+Public-D,zScales,20,0.001,0.01,model_12,240,SGD,0.9,mse

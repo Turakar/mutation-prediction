@@ -1,0 +1,33 @@
+dataset,descriptor,sigma,C
+Public-A,mutInd,1.00E-01,1024
+Public-A,Identity,1.00E-02,1024
+Public-A,PCscores ,1.00E-04,1024
+Public-A,zScales,1.00E-02,256
+Public-A,VHSE,1.00E-02,1024
+Public-A,protVec,1.00E-03,64
+Public-A,sScales,1.00E-01,256
+Public-A,sPairs,1.00E-03,1024
+Public-B,mutInd,1.00E-01,256
+Public-B,Identity,1.00E-01,256
+Public-B,PCscores ,1.00E-03,64
+Public-B,zScales,1.00E-03,256
+Public-B,VHSE,1.00E-03,64
+Public-B,protVec,1.00E-03,64
+Public-B,sScales,1.00E-01,16
+Public-B,sPairs,1.00E-02,4
+Public-C,mutInd,1.00E-01,1
+Public-C,Identity,1.00E-01,1
+Public-C,PCscores ,1.00E-03,4
+Public-C,zScales,1.00E-02,4
+Public-C,VHSE,1.00E-02,1
+Public-C,protVec,1.00E-02,1
+Public-C,sScales,1.00E-02,64
+Public-C,sPairs,1.00E-01,1
+Public-D,mutInd,1.00E-01,64
+Public-D,Identity,1.00E-01,16
+Public-D,PCscores ,1.00E-04,64
+Public-D,zScales,1.00E-03,64
+Public-D,VHSE,1.00E-03,64
+Public-D,protVec,1.00E-02,4
+Public-D,sScales,1.00E-02,4
+Public-D,sPairs,1.00E-02,64

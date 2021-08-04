@@ -1,0 +1,17 @@
+dataset,descriptor,batch_size,learning_rate,model,epoch,optimizer,momentum,objective,initialization
+Public-A,Identity,20,0.005,cnn_3,240,nesterov_momentum,0.9,mse,HeNormal
+Public-A,PCscores ,20,0.01,cnn_5,390,nesterov_momentum,0.9,mse,HeNormal
+Public-A,VHSE,40,0.005,cnn_8,340,nesterov_momentum,0.9,mse,HeNormal
+Public-A,zScales,60,0.01,cnn_5,300,nesterov_momentum,0.9,mse,HeNormal
+Public-C,Identity,40,0.001,cnn_1,120,nesterov_momentum,0.9,mse,HeNormal
+Public-C,PCscores ,40,0.001,cnn_1,200,nesterov_momentum,0.9,mse,HeNormal
+Public-C,VHSE,60,0.001,cnn_6,80,nesterov_momentum,0.9,mse,HeNormal
+Public-C,zScales,40,0.001,cnn_1,250,nesterov_momentum,0.9,mse,HeNormal
+Public-B,Identity,20,0.01,cnn_6,330,nesterov_momentum,0.9,mse,HeNormal
+Public-B,PCscores ,20,0.01,cnn_9,460,nesterov_momentum,0.9,mse,HeNormal
+Public-B,VHSE,40,0.01,cnn_6,480,nesterov_momentum,0.9,mse,HeNormal
+Public-B,zScales,40,0.01,cnn_6,460,nesterov_momentum,0.9,mse,HeNormal
+Public-D,Identity,20,0.005,cnn_1,340,nesterov_momentum,0.9,mse,HeNormal
+Public-D,PCscores ,60,0.005,cnn_1,500,nesterov_momentum,0.9,mse,HeNormal
+Public-D,VHSE,40,0.01,cnn_1,390,nesterov_momentum,0.9,mse,HeNormal
+Public-D,zScales,60,0.005,cnn_1,430,nesterov_momentum,0.9,mse,HeNormal

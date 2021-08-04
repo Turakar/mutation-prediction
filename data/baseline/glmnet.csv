@@ -1,0 +1,33 @@
+dataset,descriptor,alpha,lambda
+Public-A,mutInd,0.1,2
+Public-A,Identity,1,0.25
+Public-A,PCscores ,0.3,4
+Public-A,zScales,1,2
+Public-A,VHSE,0.3,4
+Public-A,protVec,1,0.5
+Public-A,sScales,1,2
+Public-A,sPairs,1,2
+Public-B,mutInd,0,4
+Public-B,Identity,1,1
+Public-B,PCscores ,0,4
+Public-B,zScales,0.3,4
+Public-B,VHSE,0.3,4
+Public-B,protVec,0.5,2
+Public-B,sScales,0,4
+Public-B,sPairs,0.7,4
+Public-C,mutInd,0.3,0.0625
+Public-C,Identity,0,0.25
+Public-C,PCscores ,0,0.5
+Public-C,zScales,0.3,0.0625
+Public-C,VHSE,0.1,0.0625
+Public-C,protVec,0,0.25
+Public-C,sScales,0,0.125
+Public-C,sPairs,0,0.5
+Public-D,mutInd,0.1,0.125
+Public-D,Identity,0.1,0.0625
+Public-D,PCscores ,0.3,0.25
+Public-D,zScales,0.3,0.0625
+Public-D,VHSE,0.1,1
+Public-D,protVec,0,0.5
+Public-D,sScales,0.1,0.5
+Public-D,sPairs,0.7,0.25

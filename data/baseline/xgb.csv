@@ -1,0 +1,33 @@
+dataset,descriptor,nrounds,max_depth,eta,colsample_bytree,gamma,subsample,min_child_weight
+Public-A,mutInd,1000,15,0.05,0.3,0,0.5,1
+Public-A,Identity,1000,10,0.05,0.3,0,0.5,1
+Public-A,PCscores ,500,15,0.05,0.3,0,0.5,1
+Public-A,zScales,1500,15,0.01,0.3,0,0.5,1
+Public-A,VHSE,1500,10,0.05,0.3,0,0.5,1
+Public-A,protVec,1500,10,0.01,0.3,0,0.5,1
+Public-A,sScales,500,10,0.05,0.3,0,0.5,1
+Public-A,sPairs,1000,15,0.01,0.3,0,0.5,1
+Public-B,mutInd,500,10,0.05,0.3,0,0.5,1
+Public-B,Identity,1500,15,0.01,0.3,0,0.5,1
+Public-B,PCscores ,1000,15,0.01,0.3,0,0.5,1
+Public-B,zScales,1500,10,0.01,0.3,0,0.5,1
+Public-B,VHSE,1500,10,0.01,0.3,0,0.5,1
+Public-B,protVec,1000,10,0.05,0.667,0,0.5,1
+Public-B,sScales,1000,10,0.01,0.667,0,0.5,1
+Public-B,sPairs,1000,15,0.01,0.3,0,0.5,1
+Public-C,mutInd,1000,15,0.01,0.3,0,0.5,1
+Public-C,Identity,1000,10,0.01,0.3,0,0.5,1
+Public-C,PCscores ,1000,10,0.01,0.3,0,0.5,1
+Public-C,zScales,1500,15,0.05,0.3,0,0.5,1
+Public-C,VHSE,1000,10,0.01,0.3,0,0.5,1
+Public-C,protVec,1000,10,0.01,0.3,0,0.5,1
+Public-C,sScales,1000,10,0.01,0.3,0,0.5,1
+Public-C,sPairs,1000,10,0.01,0.3,0,0.5,1
+Public-D,mutInd,1500,10,0.01,0.667,0,0.5,1
+Public-D,Identity,1000,15,0.05,0.3,0,0.5,1
+Public-D,PCscores ,1500,15,0.01,0.3,0,0.5,1
+Public-D,zScales,500,15,0.05,0.3,0,0.5,1
+Public-D,VHSE,1500,15,0.01,0.3,0,0.5,1
+Public-D,protVec,1500,15,0.01,0.3,0,0.5,1
+Public-D,sScales,1000,10,0.05,0.667,0,0.5,1
+Public-D,sPairs,1000,15,0.01,0.3,0,0.5,1
