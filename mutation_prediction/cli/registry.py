@@ -2,6 +2,8 @@ import collections
 import functools
 
 import numpy as np
+from scipy.stats import mstats
+from sklearn.model_selection import train_test_split
 
 import mutation_prediction.data.loader as loader
 import mutation_prediction.data.preprocessing as preprocessing
@@ -39,7 +41,6 @@ from mutation_prediction.embeddings.spectral import (
     SpectralSingle,
 )
 from mutation_prediction.embeddings.structural import SPairs
-from mutation_prediction.models import gnn
 
 # manually selected models
 models = {
@@ -63,9 +64,6 @@ models = {
     "CnnLinearSScalesProb": lambda: cnn.CnnRegressorLinearCustomEmbedding(
         ConcatEmbedding(SScales(), PrecomputedAutoEncoder("Linear"))
     ),
-    "GraphTransformer": gnn.GraphTransformerRegressor,
-    "GraphTransformerSimple": gnn.GraphTransformerSimpleRegressor,
-    "GraphConv": gnn.GraphConvRegressor,
     "KCnn": lambda: cnn.KCnn(SScales()),
     "KCnnPlus": cnn.KCnnPlus,
     "KCnnConf": lambda: cnn.KCnn(
@@ -145,6 +143,19 @@ models = {
         )
     ),
 }
+
+try:
+    from mutation_prediction.models import gnn
+
+    models.update(
+        {
+            "GraphTransformer": gnn.GraphTransformerRegressor,
+            "GraphTransformerSimple": gnn.GraphTransformerSimpleRegressor,
+            "GraphConv": gnn.GraphConvRegressor,
+        }
+    )
+except ImportError:
+    pass
 
 # embedding comparison models
 comparison_embeddings = [
@@ -238,6 +249,21 @@ def dataset_dcov(k):
     return train, val, test
 
 
+def dataset_dr500_reduced():
+    def make_discrete(array, bins):
+        bin_edges = mstats.mquantiles(array, np.linspace(0, 1, bins + 1)[1:])
+        return np.digitize(array, bin_edges, right=True)
+
+    train, test = datasets["Dr500"]()
+
+    y = np.stack([make_discrete(test.get_y(), 10), make_discrete(test.get_num_mutations(), 10)]).T
+
+    test_idx, _ = train_test_split(
+        np.arange(len(test)), train_size=500, stratify=y, random_state=42
+    )
+    return train, test[test_idx]
+
+
 datasets = {
     # Xu et al. 2020
     "A": lambda: preprocessing.split_by_index(loader.load_a(), 0.765),
@@ -269,6 +295,7 @@ datasets = {
     ),
     "E50": dataset_e50,
     "E75": dataset_e75,
+    "Dr500_red": dataset_dr500_reduced,
 }
 
 # DrN datasets (random subsamples of dataset D of size N)

@@ -54,15 +54,15 @@ class ConcatEmbedding(Embedding):
     def embed_update(self, dataset: Dataset, trial: Trial = None) -> np.ndarray:
         embedded = [
             embedder.embed_update(dataset, trial=trial)
-            for embedder in self._get_selected_embeddings()
+            for embedder in self.get_selected_embeddings()
         ]
         return self._concat(dataset, embedded)
 
     def embed(self, dataset: Dataset) -> np.ndarray:
-        embedded = [embedder.embed(dataset) for embedder in self._get_selected_embeddings()]
+        embedded = [embedder.embed(dataset) for embedder in self.get_selected_embeddings()]
         return self._concat(dataset, embedded)
 
-    def _get_selected_embeddings(self):
+    def get_selected_embeddings(self) -> List[Embedding]:
         if self.configurable:
             return [
                 embedder

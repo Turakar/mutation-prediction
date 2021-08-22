@@ -229,6 +229,12 @@ class Model(abc.ABC):
             prediction[i * batch_size : i * batch_size + len(batch)] = self.predict(batch)
         return prediction
 
+    def save(self, path: str):
+        raise NotImplementedError()
+
+    def load(self, path: str):
+        raise NotImplementedError()
+
 
 class FixedEmbeddingModel(Model, abc.ABC):
     def __init__(

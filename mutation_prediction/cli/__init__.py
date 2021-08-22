@@ -1,5 +1,6 @@
 import argparse
 import logging
+import os
 import sys
 import time
 import warnings
@@ -156,6 +157,11 @@ def main():
     parser_copy.add_argument("destination")
     parser_copy.add_argument("--rename", type=str, help="The new name of the study.", default=None)
     parser_copy.add_argument("--yes", "-y", action="store_true")
+
+    parser_train = subparsers.add_parser("train", help="Train a model and save it.")
+    parser_train.set_defaults(func=main_train)
+    parser_train.add_argument("name")
+    parser_train.add_argument("output")
 
     args = parser.parse_args()
     args.func(args)
@@ -411,6 +417,23 @@ def main_copy(args):
         to_storage,
         to_name,
     )
+
+
+def main_train(args):
+    model, params, study, datasets, _ = load_study(args)
+    best_trial_number = study.user_attrs.get("selected", study.best_trial.number)
+    best_trial = study.trials[best_trial_number]
+    model.hyperparams.set_from_trial(best_trial, params)
+    train, test = datasets
+    print("Fitting...")
+    model.fit(train)
+    print("Testing...")
+    if len(test) >= 1000:
+        prediction = model.predict_batched(test, 1000)
+    else:
+        prediction = model.predict(test)
+    print("R² = %.4f" % r2_score(test.get_y(), prediction))
+    model.save(os.path.join("models", args.output + ".pt"))
 
 
 def load_study(args):

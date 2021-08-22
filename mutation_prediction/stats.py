@@ -47,7 +47,7 @@ def mean_difference_spread(
 def bootstrap(values, metric=np.mean, repetitions=10000, coverage=0.95, method="percentile"):
     values = np.asarray(values)
     estimate = metric(values)
-    if len(values) == 0:
+    if len(values) <= 1:
         return estimate, estimate, estimate
     bs = IIDBootstrap(np.asarray(values))
     lower, upper = bs.conf_int(metric, reps=repetitions, method=method, size=coverage)

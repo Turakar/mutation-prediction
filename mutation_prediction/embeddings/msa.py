@@ -267,11 +267,15 @@ class PrecomputedAutoEncoder(Embedding):
         return self.embed(dataset)
 
     def embed(self, dataset: Dataset) -> np.ndarray:
-        filename = self.name + (
-            "-%s-%d.npy" % (dataset.get_name(), self.hyperparams["latent"].get())
+        path = os.environ.get(
+            "MUTATION_PREDICTION_PATCH_AE",
+            os.path.join(
+                node.get_precomputed_path(),
+                self.name + "-%s-%d.npy" % (dataset.get_name(), self.hyperparams["latent"].get())
+            )
         )
         probabilities = np.load(
-            os.path.join(node.get_precomputed_path(), filename),
+            path,
             mmap_mode="r",
         )
         return probabilities[dataset.get_ids()]

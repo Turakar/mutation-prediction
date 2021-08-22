@@ -110,12 +110,14 @@ class ProtTransFeatureExtractionPrecomputed(Embedding):
     def _embed(self, dataset: Dataset) -> np.ndarray:
         if self.sub_dataset is not None:
             dataset_name = self.sub_dataset
-            ids = np.load(os.path.join(
-                node.get_precomputed_path(),
-                "%s-%s-ids.npy" % (self.hyperparams["model"].get(), dataset_name),
-            ))
+            ids = np.load(
+                os.path.join(
+                    node.get_precomputed_path(),
+                    "%s-%s-ids.npy" % (self.hyperparams["model"].get(), dataset_name),
+                )
+            )
             mapping = {id: index for index, id in enumerate(ids)}
-            indices = np.zeros_like(ids)
+            indices = np.zeros_like(dataset.get_ids())
             for i, id in enumerate(dataset.get_ids()):
                 indices[i] = mapping[id]
         else:

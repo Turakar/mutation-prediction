@@ -7,6 +7,7 @@ from os.path import join as path_join
 
 import numpy as np
 import optuna
+import torch
 from numpy.lib.format import open_memmap
 from tqdm import tqdm
 from transformers import (
@@ -45,7 +46,7 @@ def make_index(args):
         pickle.dump(index, fd)
 
 
-def precompute_probabilities(args):
+def precompute_autoencoder(args):
     storage = optuna.storages.RDBStorage(args.database)
     study = optuna.load_study(args.study, storage)
     study_params = study.user_attrs["params"]
@@ -53,6 +54,9 @@ def precompute_probabilities(args):
     model = registry.models[study.user_attrs["model"]]()
     model.hyperparams.set_from_trial(study.best_trial, study_params)
     model.fit(train)
+    torch.save(model.model.state_dict(), path_join("models", args.output))
+    if args.only_model:
+        return
     dataset = datasets[args.dataset]()
     probabilities = model.predict_sequences(dataset.get_sequences())
     ensure_output_dir()
@@ -154,11 +158,12 @@ def main():
     parser_autoencoder = subparsers.add_parser(
         "autoencoder", help="Precompute AutoEncoder probabilities."
     )
-    parser_autoencoder.set_defaults(func=precompute_probabilities)
+    parser_autoencoder.set_defaults(func=precompute_autoencoder)
     parser_autoencoder.add_argument("database", type=str, help="URL to the database.")
     parser_autoencoder.add_argument("study", type=str, help="Name of the optuna study.")
     parser_autoencoder.add_argument("output", type=str, help="Name of the output file.")
     parser_autoencoder.add_argument("dataset", type=str, choices=datasets.keys())
+    parser_autoencoder.add_argument("--only-model", action="store_true")
 
     parser_protbert = subparsers.add_parser("protbert", help="Precompute ProtBert embedding.")
     parser_protbert.set_defaults(func=precompute_protbert)

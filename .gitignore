@@ -6,3 +6,5 @@ precomputed/prot_*.npy
 /data/datasets/B/hhblits.tar.gz
 /data/datasets/C/hhblits.tar.gz
 /data/datasets/D/hhblits.tar.gz
+/data/**/notes.txt
+/data/**/*.pdf

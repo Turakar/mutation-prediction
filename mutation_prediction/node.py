@@ -30,7 +30,3 @@ def get_precomputed_path() -> str:
 
 def get_precomputed_dataset() -> Optional[str]:
     return os.getenv("MUTATION_PREDICTION_PRECOMPUTED_DATASET", None)
-
-
-def get_storage_url() -> str:
-    return os.environ["MUTATION_PREDICTION_STORAGE"]

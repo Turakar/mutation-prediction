@@ -1,7 +1,7 @@
 import abc
 import gc
 import tempfile
-from typing import Any, Dict, List, Tuple, Type, Union
+from typing import Any, Dict, List, Optional, Tuple, Type
 
 import numpy as np
 import pytorch_lightning as pl
@@ -31,10 +31,12 @@ class LightningModel(Model):
         self.log_metrics = log_metrics
         self.patience = patience
         self.max_epochs = max_epochs
-        self.model: Union[None, pl.LightningModule] = None
+        self.model: Optional[pl.LightningModule] = None
+        self.model_params: Optional[Dict[str, Any]] = None
 
     def fit(self, dataset: Dataset, trial: Trial = None, verbose: bool = False):
         model_params, train, val = self._prepare_train(dataset)
+        self.model_params = model_params
         self.model = self.model_cls(**model_params)
 
         checkpoint_callback = pl.callbacks.ModelCheckpoint(
@@ -97,6 +99,22 @@ class LightningModel(Model):
     @abc.abstractmethod
     def _get_min_epochs(self) -> int:
         pass
+
+    def save(self, path: str):
+        data = dict(
+            hyperparams=self.hyperparams.get(),
+            model_params=self.model_params,
+            state_dict=self.model.state_dict(),
+        )
+        torch.save(data, path)
+
+    def load(self, path: str):
+        data = torch.load(path)
+        self.hyperparams.set(data["hyperparams"])
+        self.model_params = data["model_params"]
+        self.model = self.model_cls(**self.model_params)
+        self.model.load_state_dict(data["state_dict"])
+        self.model.eval()
 
 
 class SimpleTorchDataset(torch_data.Dataset):

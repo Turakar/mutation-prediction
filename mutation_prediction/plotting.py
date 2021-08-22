@@ -1,9 +1,12 @@
+from typing import List
+
 import numpy as np
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 from sklearn.metrics import mean_squared_error, r2_score
 
-from mutation_prediction.data import Dataset
+from mutation_prediction import data
+from mutation_prediction.data import Dataset, preprocessing
 from mutation_prediction.models import Model
 
 plotly_blue = "#636EFA"
@@ -203,3 +206,17 @@ def correlation_plot(model: Model, train: Dataset, test: Dataset):
         height=600,
     )
     return fig
+
+
+def get_mutant_names(dataset: Dataset) -> List[str]:
+    wild_type = data.sequence_to_string(dataset.get_sequence())
+    tuples = preprocessing.dataset_to_tuples(dataset)
+    return [
+        "+".join(
+            [
+                "%s%d%s" % (wild_type[p], p + 1, data.index_to_acid(a))
+                for p, a in sorted(list(mutant))
+            ]
+        )
+        for mutant in tuples
+    ]

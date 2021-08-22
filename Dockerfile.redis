@@ -14,10 +14,6 @@ ENV PYTHONIOENCODING=utf-8
 RUN /root/.poetry/bin/poetry env use python3.8
 RUN /root/.poetry/bin/poetry install --no-dev --no-interaction
 
-# install torch-geometric
-RUN /root/.poetry/bin/poetry run pip install torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.9.0+cpu.html
-RUN /root/.poetry/bin/poetry run pip install torch-geometric
-
 # install rust
 RUN apt-get update && \
     apt-get install -y build-essential curl cmake && \
