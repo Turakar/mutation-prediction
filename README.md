@@ -2,6 +2,7 @@
 
 This is a tool for protein mutation effect prediction.
 It was developed as part of a bachelor thesis at Forschungszentrum Jülich and RWTH Aachen University.
+While the thesis is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), the source code is licensed under [MIT](/LICENSE).
 
 ## Abstract
 Enzyme engineering plays a crucial role for industry and research, but the expensive and time-consuming evaluation of mutants in the laboratory limits the number of variants that can be explored.
