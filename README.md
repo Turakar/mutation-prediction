@@ -34,4 +34,4 @@ In conclusion, this work provides multiple contributions to the field which will
 ![correlation plots](images/correlation-regression.png)
 
 ## Thesis
-The thesis is not yet published.
+The thesis is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and available under [`/Bachelor_Thesis_Hoffbauer.pdf`](/Bachelor_Thesis_Hoffbauer.pdf).
