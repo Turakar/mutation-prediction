@@ -36,3 +36,17 @@ In conclusion, this work provides multiple contributions to the field which will
 
 ## Thesis
 The thesis is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and available under [`/Bachelor_Thesis_Hoffbauer.pdf`](/Bachelor_Thesis_Hoffbauer.pdf).
+
+```bibtex
+@mastersthesis{Hoffbauer2021,
+  document_type = {Bachelor's Thesis},
+  timestamp = {20210913},
+  author = {Tilman Hoffbauer},
+  title = {Evaluation of various machine learning approaches to predicting enzyme mutation data},
+  school = {RWTH Aachen University},
+  year = {2021},
+  type = {Bachelor Thesis},
+  month = {September},
+  doi = {https://doi.org/10.18154/RWTH-2021-08460}
+}
+```
